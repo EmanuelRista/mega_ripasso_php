@@ -10,19 +10,21 @@ Scrivi echo seguito da quello che vuoi far vedere. Non è una funzione vera e pr
 
 **Esempio semplice:**
 
-php
+```php
 
 echo "Ciao, mondo!";
+```
 
 **Risultato:** Sullo schermo appare "Ciao, mondo!".
 
 **Altro esempio:**
 
-php
+```php
 
 $nome = "Marco";
 
 echo "Ciao, " . $nome;
+```
 
 **Risultato:** "Ciao, Marco". Il punto (.) serve a unire pezzi di testo.
 
@@ -36,21 +38,23 @@ Metti var_dump() e dentro le parentesi ci infili la variabile che vuoi controlla
 
 **Esempio semplice:**
 
-php
+```php
 
 $numero = 42;
 
 var_dump($numero);
+```
 
 **Risultato:** int(42). Significa che è un numero intero (integer) con valore 42.
 
 **Altro esempio:**
 
-php
+```php
 
 $array = \["pizza", "pasta"\];
 
 var_dump($array);
+```
 
 **Risultato:** array(2) { \[0\]=> string(5) "pizza" \[1\]=> string(5) "pasta" }. Ti dice che è un array con 2 elementi, e ti mostra ogni elemento con il suo tipo (stringa) e lunghezza.
 
@@ -64,11 +68,12 @@ Scrivi print_r() e dentro le parentesi metti la variabile. Se vuoi, puoi avvolge
 
 **Esempio semplice:**
 
-php
+```php
 
 $array = \["pizza", "pasta"\];
 
 print_r($array);
+```
 
 **Risultato:**
 
@@ -86,13 +91,14 @@ Vedi? È pulito e facile da leggere.
 
 **Con &lt;pre&gt; per bellezza:**
 
-php
+```php
 
 echo "&lt;pre&gt;";
 
 print_r($array);
 
 echo "&lt;/pre&gt;";
+```
 
 **Risultato:** Lo stesso di sopra, ma formattato meglio sul browser.
 
