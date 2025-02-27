@@ -6,7 +6,7 @@
 
 php
 
-// Funzione normale
+```// Funzione normale
 
 $normal = function($x) {
 
@@ -29,3 +29,4 @@ $numeri = \[1, 2, 3\];
 $risultato = array_map(fn($n) => $n \* 3, $numeri);
 
 print_r($risultato); // Array(\[0\] => 3 \[1\] => 6 \[2\] => 9)
+```
