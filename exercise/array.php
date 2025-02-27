@@ -60,3 +60,25 @@ function somma2($nums) {
 echo somma2(1,2,3);
 
 echo "<br>";
+
+$persone = ["Francesco", "Maria", "Lorenzo", "Marika"];
+
+array_walk($persone, function($persona) {
+    echo $persona . " dice ciao!\n";
+});
+
+echo "<br>";
+
+$personeAumentate = array_map(function($persona) {
+    return $persona . "Aumentato";
+}, $persone);
+
+print_r($personeAumentate);
+
+echo "<br>";
+
+$personeStringa = array_reduce($persone, function($carry, $persona) {
+    return $carry . $persona . " ";
+});
+
+echo $personeStringa;
