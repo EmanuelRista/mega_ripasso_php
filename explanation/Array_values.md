@@ -8,13 +8,14 @@ Scrivi array_values() e dentro le parentesi metti l’array da riorganizzare. Ti
 
 **Esempio semplice:**
 
-php
+```php
 
 $frutta = \["mela", "banana", "pera"\];
 
 unset($frutta\[1\]); // Tolgo "banana"
 
 print_r($frutta);
+```
 
 **Risultato:**
 
@@ -32,11 +33,12 @@ Vedi il "buco"? L’indice salta da 0 a 2.
 
 Ora usiamo array_values:
 
-php
+```php
 
 $frutta = array_values($frutta);
 
 print_r($frutta);
+```
 
 **Risultato:**
 
@@ -54,7 +56,7 @@ Gli indici sono di nuovo consecutivi: 0, 1. Tutto in ordine!
 
 **Con chiavi personalizzate:**
 
-php
+```php
 
 $persona = \[
 
@@ -69,6 +71,7 @@ $persona = \[
 $lista = array_values($persona);
 
 print_r($lista);
+```
 
 **Risultato:**
 
