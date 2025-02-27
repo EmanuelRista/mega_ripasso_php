@@ -15,7 +15,7 @@ Restituisce true (vero) se lo trova, false (falso) se non c’è.
 
 **Esempio semplice:**
 
-php
+```php
 
 $frutta = \["mela", "banana", "pera"\];
 
@@ -30,12 +30,13 @@ echo "Sì, c’è!";
 echo "No, non c’è.";
 
 }
+```
 
 **Risultato:** Sì, c’è!. Perché "banana" è nell’array.
 
 **Esempio con valore assente:**
 
-php
+```php
 
 $frutta = \["mela", "banana", "pera"\];
 
@@ -50,12 +51,13 @@ echo "Sì, c’è!";
 echo "No, non c’è.";
 
 }
+```
 
 **Risultato:** No, non c’è.. "Pizza" non è nella lista.
 
 **Con numeri:**
 
-php
+```php
 
 $numeri = \[1, 5, 10\];
 
@@ -64,6 +66,7 @@ if (in_array(5, $numeri)) {
 echo "Il 5 è nella lista!";
 
 }
+```
 
 **Risultato:** Il 5 è nella lista!.
 
@@ -73,7 +76,7 @@ Per default, in_array non è troppo pignolo: considera "5" (stringa) uguale a 5 
 
 **Esempio senza severità:**
 
-php
+```php
 
 $numeri = \[1, 5, 10\];
 
@@ -82,6 +85,7 @@ if (in_array("5", $numeri)) {
 echo "Trovato!";
 
 }
+```
 
 **Risultato:** Trovato!. Anche se "5" è una stringa e 5 è un numero, li considera uguali.
 
