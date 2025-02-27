@@ -1,17 +1,18 @@
 **Cicli**
 
-for
+**for**
 
 **Cos’è:** Conta un numero fisso di volte.  
 **Esempio:**
 
-php
+```php
 
 for ($i = 0; $i < 3; $i++) {
 
 echo "Ciao $i\\n";
 
 }
+```
 
 **Risultato:**
 
@@ -21,12 +22,12 @@ Ciao 1
 
 Ciao 2
 
-while
+**while**
 
 **Cos’è:** Gira finché una condizione è vera.  
 **Esempio:**
 
-php
+```php
 
 $i = 0;
 
@@ -37,6 +38,7 @@ echo "Hi $i\\n";
 $i++;
 
 }
+```
 
 **Risultato:**
 
@@ -46,12 +48,12 @@ Hi 1
 
 Hi 2
 
-do while
+**do while**
 
 **Cos’è:** Come while, ma gira almeno una volta anche se la condizione è falsa all’inizio.  
 **Esempio:**
 
-php
+```php
 
 $i = 0;
 
@@ -62,6 +64,7 @@ echo "Salve $i\\n";
 $i++;
 
 } while ($i < 3);
+```
 
 **Risultato:**
 
@@ -71,12 +74,12 @@ Salve 1
 
 Salve 2
 
-foreach
+**foreach\***
 
 **Cos’è:** Scorre un array elemento per elemento.  
 **Esempio:**
 
-php
+```php
 
 $frutta = \["mela", "pera", "banana"\];
 
@@ -85,6 +88,7 @@ foreach ($frutta as $frutto) {
 echo "$frutto\\n";
 
 }
+```
 
 **Risultato:**
 

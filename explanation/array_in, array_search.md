@@ -87,7 +87,7 @@ echo "Trovato!";
 
 **Esempio con severità (strict mode):**
 
-php
+```php
 
 $numeri = \[1, 5, 10\];
 
@@ -100,6 +100,7 @@ echo "Trovato!";
 echo "Non trovato.";
 
 }
+```
 
 **Risultato:** Non trovato.. Con true, controlla anche il tipo, e "5" (stringa) non è uguale a 5 (numero).
 
@@ -109,7 +110,7 @@ Funziona anche se l’array ha chiavi personalizzate, ma cerca solo nei **valori
 
 **Esempio:**
 
-php
+```php
 
 $persona = \[
 
@@ -124,6 +125,7 @@ if (in_array("Marco", $persona)) {
 echo "Marco è qui!";
 
 }
+```
 
 **Risultato:** Marco è qui!.
 

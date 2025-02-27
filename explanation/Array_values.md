@@ -94,13 +94,14 @@ Le chiavi ("nome", "età", "città") spariscono, e i valori diventano una lista 
 
 **Esempio pratico:**
 
-php
+```php
 
 $numeri = \[10 => "dieci", 20 => "venti", 30 => "trenta"\];
 
 unset($numeri\[20\]); // Tolgo "venti"
 
 print_r($numeri);
+```
 
 **Risultato:**
 
@@ -116,11 +117,12 @@ Array
 
 Riordino con array_values:
 
-php
+```php
 
 $numeri = array_values($numeri);
 
 print_r($numeri);
+```
 
 **Risultato:**
 

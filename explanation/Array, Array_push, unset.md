@@ -10,27 +10,29 @@ Puoi usare due modi: la parola array() o le parentesi quadre \[\].
 
 **Esempio semplice con** array()**:**
 
-php
+```php
 
 $frutta = array("mela", "banana", "pera");
 
 echo $frutta\[1\];
+```
 
 **Risultato:** banana. Perché? L’indice 1 è il secondo elemento (si parte da 0: mela=0, banana=1, pera=2).
 
 **Esempio con** \[\]**:**
 
-php
+```php
 
 $frutta = \["mela", "banana", "pera"\];
 
 echo $frutta\[0\];
+```
 
 **Risultato:** mela. Stessa cosa, ma più corto e moderno.
 
 **Array con chiavi personalizzate:**
 
-php
+```php
 
 $persona = \[
 
@@ -41,6 +43,7 @@ $persona = \[
 \];
 
 echo $persona\["nome"\];
+```
 
 **Risultato:** Marco. Qui usi "nome" come chiave invece di numeri.
 
@@ -54,13 +57,14 @@ Scrivi array_push(), metti l’array e poi il valore (o valori) da aggiungere.
 
 **Esempio semplice:**
 
-php
+```php
 
 $frutta = \["mela", "banana"\];
 
 array_push($frutta, "pera");
 
 print_r($frutta);
+```
 
 **Risultato:**
 
@@ -80,13 +84,14 @@ La "pera" è stata aggiunta in fondo.
 
 **Aggiungere più cose:**
 
-php
+```php
 
 $frutta = \["mela"\];
 
 array_push($frutta, "banana", "pera");
 
 print_r($frutta);
+```
 
 **Risultato:**
 
@@ -104,9 +109,10 @@ Array
 
 **Alternativa:** Puoi anche usare \[\] per aggiungere:
 
-php
+```php
 
 $frutta\[\] = "pera";
+```
 
 Fa lo stesso di array_push, ma è più veloce per un solo elemento.
 
@@ -120,13 +126,14 @@ Scrivi unset() e dentro metti l’array con l’indice (o la chiave) da eliminar
 
 **Esempio semplice:**
 
-php
+```php
 
 $frutta = \["mela", "banana", "pera"\];
 
 unset($frutta\[1\]);
 
 print_r($frutta);
+```
 
 **Risultato:**
 
@@ -144,7 +151,7 @@ La "banana" (indice 1) è sparita. Nota che gli indici non si riorganizzano da s
 
 **Eliminare una chiave:**
 
-php
+```php
 
 $persona = \[
 
@@ -157,6 +164,7 @@ $persona = \[
 unset($persona\["età"\]);
 
 print_r($persona);
+```
 
 **Risultato:**
 
@@ -172,11 +180,12 @@ L’"età" è stata cancellata.
 
 **Cancellare tutto l’array:**
 
-php
+```php
 
 $frutta = \["mela", "banana"\];
 
 unset($frutta);
+```
 
 Ora $frutta non esiste più!
 
@@ -190,7 +199,7 @@ Ora $frutta non esiste più!
 
 - Dopo unset, gli indici numerici restano "bucati" (es. salta da 0 a 2). Se vuoi riorganizzarli, usa array_values():
 
-php
+```php
 
 $frutta = \["mela", "banana", "pera"\];
 
@@ -199,6 +208,7 @@ unset($frutta\[1\]);
 $frutta = array_values($frutta);
 
 print_r($frutta);
+```
 
 **Risultato:**
 

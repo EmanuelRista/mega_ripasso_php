@@ -4,9 +4,9 @@
 
 **Esempio:**
 
-php
+```php
 
-```// Funzione normale
+// Funzione normale
 
 $normal = function($x) {
 

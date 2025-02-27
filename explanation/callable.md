@@ -4,7 +4,7 @@
 
 **Esempio:**
 
-php
+```php
 
 // Una funzione normale
 
@@ -31,3 +31,4 @@ var_dump(is_callable($anonima)); // true - anche questa si può chiamare
 saluta(); // Ciao!
 
 $anonima(); // Hey!
+```
