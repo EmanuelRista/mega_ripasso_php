@@ -82,3 +82,42 @@ $personeStringa = array_reduce($persone, function($carry, $persona) {
 });
 
 echo $personeStringa;
+
+echo "<br>";
+
+print_r(array_pop($persone));
+echo "<br>";
+print_r($persone);
+
+echo "<br>";
+
+print_r(array_shift($persone));
+echo "<br>";
+print_r($persone);
+
+echo "<br>";
+
+print_r(array_push($persone, "Gertrude", "Fabio"));
+echo "<br>";
+print_r($persone);
+
+echo "<br>";
+
+print_r(array_unshift($persone, "Giuseppe"));
+echo "<br>";
+print_r($persone);
+
+echo "<br>";
+
+asort($persone);
+print_r($persone);
+echo "<br>";
+sort($persone);
+print_r($persone);
+
+echo "<br>";
+
+$fruitColors = ["mela" => "rosso", "banana" => "giallo"];
+echo array_key_exists("banana", $fruitColors);
+
+echo "<br>";

@@ -45,3 +45,18 @@ echo implode(' ', $array);
 echo '<br>';
 
 echo join(' - ', $array);
+
+echo '<br>';
+
+$frase = "L\'albero è verde";
+
+echo stripslashes($frase);
+
+echo "<br>";
+
+echo str_contains($frase, "verde");
+
+echo str_starts_with($frase, "L");
+
+echo str_ends_with($frase, "e");
+
