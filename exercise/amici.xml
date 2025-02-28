@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<amici>
+    <amico>
+        <nome>Marco</nome>
+        <età>25</età>
+    </amico>
+    <amico>
+        <nome>Lucia</nome>
+        <età>30</età>
+    </amico>
+    <amico>
+        <nome>Giovanni</nome>
+        <età>37</età>
+    </amico>
+</amici>
