@@ -76,5 +76,4 @@ print_r(is_callable("saluta"));
 echo "<br>";
 
 
-
 ?>

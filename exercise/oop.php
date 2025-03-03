@@ -375,3 +375,36 @@ echo $uccello->nome . ": " . $uccello->vola() . "<br>"; // Output: Pappagallo: S
 $superEroe = new Supereroe('Superman');
 echo $superEroe->saluta() . "<br>"; // Output: Ciao!
 echo $superEroe->salutoParlante() . "<br>"; // Output: Ciao!
+
+//scope resolution operator
+
+class Casa {
+    
+    public static $colore = "Rosso";
+
+    public static function apriPorta() {
+        return "Porta aperta!";
+    }
+
+    const NUMERO_FINESTRE = 4;
+
+}
+
+echo Casa::$colore . "<br>"; // Output: Rosso
+echo Casa::apriPorta() . "<br>"; // Output: Porta aperta!
+echo Casa::NUMERO_FINESTRE . "<br>"; // Output: 4
+
+
+//namespace
+
+/* namespace Clienti;
+
+class User3 {
+
+    public function chiSono() {
+        return "Sono un amministratore!";
+    }
+}
+
+$admin = new \Clienti\User3();
+echo $admin->chiSono() . "<br>"; */ // Output: Sono un amministratore!
